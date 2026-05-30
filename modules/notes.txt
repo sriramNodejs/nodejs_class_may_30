@@ -1,0 +1,15 @@
+Module systems 
+1. Commonjs (csj)
+2. ESM (es modules)
+
+Module Types
+1. built in modules
+2. custom modules
+3. Third party modules
+
+How to install third party modules
+
+
+
+
+Dependency

@@ -1,5 +1,5 @@
-import hello3, {print1, print2} from "./hello1.js"
+import hello3, {print1 as printhello, print2} from "./hello1.js"
 
 hello3()
-print1()
+printhello()
 print2()
