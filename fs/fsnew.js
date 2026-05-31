@@ -93,14 +93,14 @@ const fs = require('fs');
 
 
 // check file information
-fs.stat('fsPromise.js', (err, stats) => {
-    if (err) {
-        console.log(err);
-        return;
-    }
+// fs.stat('fsPromise.js', (err, stats) => {
+//     if (err) {
+//         console.log(err);
+//         return;
+//     }
 
-    console.log(stats);
-    console.log(stats.isFile());
-    console.log(stats.isDirectory());
-})
+//     console.log(stats);
+//     console.log(stats.isFile());
+//     console.log(stats.isDirectory());
+// })
 
