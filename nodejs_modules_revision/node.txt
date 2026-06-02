@@ -1,0 +1,20 @@
+Nodejs 
+
+Event Loop 
+
+Micro task -> 
+    process.nextTick()
+    promises()
+
+
+// TImer queue -> setTimeout , setInterval -> 3  ->1, 2, 3
+// IO polling 
+// Set immidiate 
+// Closed callback queue
+
+
+setTimeout
+
+Number = (timoutId)
+
+clearTimout(timeoutId) 

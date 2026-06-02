@@ -1,0 +1,37 @@
+Module system 
+
+1. CJS
+2. ESM 
+
+1. CJS  (common JS) -> by default behaviour 
+for exporting -> module.exports = {}, module.exports = name (single)
+
+2. ESM (module system) 
+how to use ESM in Nodejs -> 
+
+npm init -> npm initialization 
+in package.json -> type:module 
+
+export and export default -> 
+how to import -> import "" from "<path>"
+
+
+-> dependencies 
+-> devDependencies 
+
+"mongoose": "^9.6.3"   -> it will take updated minor and patch releases 
+"express": "~5.2.1"    -> it will take updated patch release when installing 
+
+npm i express@4.22.2 -> for any particular version 
+npm i express@latest or npm i express -> for latest version 
+
+
+
+// Use in production (any one command)
+
+npm install --production     (only installs dependencies no dev dependencies)
+
+npm install --omit=dev       (only installs dependencies no dev dependencies)
+
+
+URL -> 28:30:30:30 -> DOMAIN NAME -> google.com
