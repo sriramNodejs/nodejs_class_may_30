@@ -1,0 +1,9 @@
+Express -> framework -> 2010 
+current version -> 5
+
+
+Advantages of express -> 
+1. Routing 
+2. Middleware 
+3. SSR (server side rendering)
+4. Less coding as compared to Pure nodejs 

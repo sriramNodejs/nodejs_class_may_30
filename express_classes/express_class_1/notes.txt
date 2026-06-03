@@ -1,0 +1,19 @@
+how to install express 
+
+npm install express 
+
+
+npm scripts -> 
+
+custom scripts we can configure 
+
+"scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":"node index.js",
+    "dev":"node --watch index.js",
+    "dev3":"node --watch index.js"
+  },
+
+  for start -> npm start or npm run start
+
+  but other than start -> we have to write "run" i.e npm run dev
