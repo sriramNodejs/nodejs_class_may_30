@@ -1,0 +1,35 @@
+REST API -> Representational State Transfer API (Application Progrmming Interface)
+
+if you request it will give response and cycle is over .
+
+
+// 200 -> Success
+201 -> Created
+
+400 -> Bad Request 
+
+404 -> Not Found 
+
+500 -> Internal Server Error 
+
+
+
+How you send your data to the API ->
+
+1. Query (Request Query)
+2. Params (Request Params)
+3. Body (Request Body)
+4. Headers 
+5. Cookies
+
+
+
+Postman -> Postman is a API testing Platform , to test Differnt types of API (REST API, Websockets, GraphQL)
+
+How to install -> https://www.postman.com/downloads/
+click on your operating system
+give your mail and submit 
+go to your mail and find the link to download
+
+install the Application
+sign in to your postman 

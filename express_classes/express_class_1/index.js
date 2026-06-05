@@ -43,7 +43,7 @@ app.use('/user', userRoutes);
 
 app.use('/users', usersRoutes)
 
-
+ 
 // global error handler
 
 app.use((err, req, res, next) => {
