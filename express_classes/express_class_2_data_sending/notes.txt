@@ -33,3 +33,26 @@ go to your mail and find the link to download
 
 install the Application
 sign in to your postman 
+
+
+
+1. How to send the data by Query 
+
+POST -> localhost:3000?name=nodejs&age=10&phone=9999999
+
+it translated to 
+{ name: 'nodejs', age: '10', phone: '999999' } 
+
+
+2. How to send the data by Params
+PATCH -> localhost:3000/29/nodejs
+
+
+'29'
+
+parseInt('29') -> 29
+Number('29')
+
+
+3. How to send the data by Body
+
