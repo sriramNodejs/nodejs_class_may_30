@@ -1,3 +1,21 @@
 File upload 
 
 multipart-formdata
+
+
+
+
+you can use express-validator for express-fileupload also 
+
+
+body('photo').custom((value, { req }) => {
+  if (!req.files || Object.keys(req.files).length === 0) {
+    throw new Error('no files uploaded')
+  }
+
+  const sampleFile = req.files.photo;
+
+  if (!sampleFile) {
+    throw new Error('no file as named photo')
+  }
+});
