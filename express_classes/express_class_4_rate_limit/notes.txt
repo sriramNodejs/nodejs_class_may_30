@@ -1,0 +1,6 @@
+what is Rate limiting ?
+
+
+Rate limiting is a performance optimization technique where we limit the number of requests per some amount of time so that any one can't abuse , or over hits out API. 
+
+we are using a module called express-rate-limit
