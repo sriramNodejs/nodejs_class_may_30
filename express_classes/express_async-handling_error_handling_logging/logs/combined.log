@@ -1,0 +1,6 @@
+{"level":"info","message":"This is an info log message","timestamp":"2026-06-07T11:25:14.689Z"}
+{"level":"info","message":"This is an info log message","timestamp":"2026-06-07T11:25:16.915Z"}
+{"level":"info","message":"This is an info log message","timestamp":"2026-06-07T11:25:17.972Z"}
+{"level":"error","message":"Error: this is a error","timestamp":"2026-06-07T11:26:50.169Z"}
+{"level":"error","message":"Error: this is a error","timestamp":"2026-06-07T11:26:51.790Z"}
+{"level":"error","message":"Error: this is a error","timestamp":"2026-06-07T11:26:52.832Z"}

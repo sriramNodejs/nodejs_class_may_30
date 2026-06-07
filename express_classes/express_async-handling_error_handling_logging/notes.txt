@@ -1,0 +1,16 @@
+Async function ?
+
+Callbacks, promises, async await 
+
+
+
+// 
+
+how to handle errors 
+
+1. try catch   -> direct send response in catch 
+                -> send to globa error handler 
+2. Global error handler 
+
+3. custom error handler -> send to global error handler 
+

@@ -1,0 +1,42 @@
+Logging 
+
+// what is Logging 
+
+To Log (store) incoming requests,
+
+why logging ?
+
+To trace errors, to know how many incoming requests are coming to our Software, 
+
+
+Logging middlewares -> 
+1. morgan
+2. winston 
+
+
+1. mogran 
+
+app.use(morgan('dev'));
+
+Response -> 
+GET /mogran-logging 200 3.673 ms - 45
+
+GET -> HTTP method type 
+/mogran-logging  -> API name
+200 -> status code 
+3.673 ms  -> Response time 
+45 -> content size in bytes
+
+
+
+app.use(morgan('combined'));
+::1 - - [07/Jun/2026:11:16:04 +0000] "GET /mogran-logging HTTP/1.1" 200 95 "-" "PostmanRuntime/7.49.1"
+
+
+::1  -> from where reqest came from 
+[07/Jun/2026:11:16:04 +0000] -> Date
+GET -> HTTP method type 
+/mogran-logging  -> API name
+HTTP/1.1 -> API Type 
+200 -> status code 
+95 -> content size in bytes
