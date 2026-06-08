@@ -1,0 +1,76 @@
+1. Vertical Scaling: Leveraging Multi-Core Systems
+
+
+By default, a Node.js process runs on exactly one CPU core. If your server host has 4, 8, or 16 cores, the remaining power sits idle. You can scale vertically by spinning up separate workers for every available core.
+
+
+Option A: Native Cluster Module
+
+The built-in Cluster module lets you spawn master/worker processes that share the same server port.
+
+
+import cluster from 'cluster';
+import os from 'os';
+import express from 'express';
+
+if (cluster.isPrimary) {
+  const numCPUs = os.availableParallelism ? os.availableParallelism() : os.cpus().length;
+  console.log(`Primary system active. Forking ${numCPUs} application workers...`);
+
+  // Fork workers based on available core counts
+  for (let i = 0; i < numCPUs; i++) {
+    cluster.fork();
+  }
+
+  cluster.on('exit', (worker, code, signal) => {
+    console.log(`Worker ${worker.process.pid} failed. Restarting replacement instance...`);
+    cluster.fork(); // Automatically replaces dead processes
+  });
+} else {
+  // Worker processes execute the standard server setup
+  const app = express();
+  
+  app.get('/compute', (req, res) => {
+    res.send(`Handled securely by worker thread PID: ${process.pid}`);
+  });
+
+  app.listen(3000);
+}
+
+
+Option B: PM2 Process Manager (Recommended for Production)
+
+
+Instead of writing native cluster logic manually, manage your microservices using PM2. It handles process clustering, automatic zero-downtime reboots, and terminal metrics.
+
+
+
+npm install pm2 -g
+
+# Start your app in cluster mode to use all available CPU cores automatically
+pm2 start app.js -i max
+
+
+
+2. Offloading Heavy CPU Tasks: Worker Threads
+
+If your application needs to handle computational work (like image resizing, password hashing, cryptography, or parsing large Excel files), do not execute it on the main event loop. Offload it to a background Worker Thread.
+
+
+import express from 'express';
+import { Worker } from 'worker_threads';
+
+const app = express();
+
+app.get('/heavy-task', (req, res) => {
+  // Spin up an isolated background thread for computational execution
+  const worker = new Worker('./workerScript.js');
+
+  worker.on('message', (result) => {
+    res.json({ success: true, data: result });
+  });
+
+  worker.on('error', (err) => {
+    res.status(500).json({ error: err.message });
+  });
+});

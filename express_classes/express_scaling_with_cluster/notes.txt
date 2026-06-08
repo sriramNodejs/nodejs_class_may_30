@@ -1,0 +1,21 @@
+Scaling 
+
+how to scale in express application 
+1. cluster module
+2. pm2
+
+
+
+
+
+-- multi threading 
+
+worker thread
+
+- A worker thread is a thread that performs tasks in the background, allowing the main thread to remain responsive.
+
+
+IPC -> Inter Process Communication 
+
+- IPC is a mechanism that allows different processes to communicate with each other. In the context of worker threads, IPC is used to send messages between the main thread and worker threads.
+
