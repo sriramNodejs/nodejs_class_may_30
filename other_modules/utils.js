@@ -1,5 +1,5 @@
 const abc = require('util');
-const fs = require('fs')
+const fs = require('fs')   // sync and callback
 const fsPromises = require('fs/promises');
 
 
@@ -42,3 +42,15 @@ const fsPromises = require('fs/promises');
 //     }
 //     console.log(data, 'callbackify')
 // })
+
+// format method 
+const result = abc.format('hello %s your age is %i', 'Nodejs', 12);
+console.log(result);
+
+const jsonResult = abc.format('hello %j', {
+    name: 'nodejs',
+    success:true,
+    age: 12,
+    version: 24.12
+});
+console.log(jsonResult);

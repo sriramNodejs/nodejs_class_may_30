@@ -1,0 +1,21 @@
+create a project
+
+
+npm init 
+
+it will ask about this questions
+about, 
+name, 
+version
+tags
+author
+
+// i dont want this questions 
+npm init -y
+
+
+
+
+to convert from cjs to esm , in package.json modify "type": "module", and you can use module system.
+
+ESM -> module caching and newer version  (Recommended to use)

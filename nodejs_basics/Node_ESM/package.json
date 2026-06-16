@@ -1,0 +1,15 @@
+{
+  "name": "node_esm",
+  "version": "2.0.0",
+  "description": "this is a basic project",
+  "keywords": [
+    "nodejs"
+  ],
+  "license": "ISC",
+  "author": "nodejs",
+  "type": "module",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}

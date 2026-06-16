@@ -1,0 +1,9 @@
+HTTP -> hypertext transfer Protocol
+
+Stateless Protocol 
+
+
+
+RESTful API (or REST API's)
+
+Representational State Transfer API's 
