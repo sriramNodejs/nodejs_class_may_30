@@ -7,3 +7,10 @@ Stateless Protocol
 RESTful API (or REST API's)
 
 Representational State Transfer API's 
+
+
+HTTP -> Protocol
+
+By using http you can create web servers 
+// and you can create RESTful API's 
+// REST apis are the way over HTTP two servers (computers) can communicate with each other 
